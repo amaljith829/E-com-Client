@@ -1,0 +1,35 @@
+.navbar {
+    background-color: #343a40;
+    padding: 1rem;
+  }
+  
+  .navbar-brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
+  
+  .navbar-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #495057;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
