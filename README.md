@@ -1,12 +1,74 @@
-# React + Vite
+# E-Commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a full-stack eCommerce web application built using React for the frontend and Node.js for the backend. The application allows users to browse products, view product details, add items to their cart, and manage their accounts with login and signup functionality.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Home Page**: A welcoming page with a search bar for products and delivery location.
+- **Product Listing**: Displays all available products with details like name, description, price, and stock.
+- **Product Details**: View detailed information about a specific product.
+- **Cart**: Add products to the cart and manage them.
+- **Authentication**: Login and signup functionality for users.
+- **Responsive Design**: Fully responsive UI for all devices.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+- **React**: For building the user interface.
+- **React Router**: For navigation between pages.
+- **Axios**: For making API requests.
+- **CSS**: For styling the application.
+
+### Backend
+- **Node.js**: For building the server-side logic.
+- **Express.js**: For handling API routes.
+- **MongoDB**: For storing product and user data.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/ecommerce-website.git
+   cd ecommerce-website
+
+ 2. Install dependencies for the frontend:
+     cd client
+     npm install
+
+3. Install dependencies for the backend:
+    cd ../server
+    npm install
+
+4. Start the development servers:
+
+   Frontend:    
+   cd client
+   npm run dev
+
+  Backend:
+  cd ../server
+  npm start
+
+5.  Open the application in your browser at http://localhost:5173.
+
+ecommerce-website
+├── client
+│   ├── src
+│   │   ├── components
+│   │   │   ├── Navbar
+│   │   │   ├── Footer
+│   │   │   └── Card
+│   │   ├── pages
+│   │   │   ├── Home
+│   │   │   ├── Product
+│   │   │   ├── Login
+│   │   │   ├── Signup
+│   │   │   └── Cart
+│   │   └── App.jsx
+│   └── public
+├── server
+│   ├── routes
+│   ├── models
+│   ├── controllers
+│   └── server.js
+└── README.md
